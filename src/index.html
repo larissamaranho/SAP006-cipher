@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor de César</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js" type="module"></script>
 </head>
 <body>
-  <div id="root">
-    <h1>Hello world!</h1>
-  </div>
-  <script src="index.js" type="module"></script>
+    <header>
+        <img src="img/cifra2.png" alt="Imagem que mostra um disco com letras e chaves.">
+    </header>
+    <main>
+        <h1>Tradutor de César</h1>
+            <form id="caixaDeTexto" autocomplete="off">
+                <input id="inputCaixaTexto" placeholder="Digite o texto" type="text" name="text"> 
+            </form>
+            <div class="chave"></div>
+                <input id="chaveOffset" type="number" min="1" max="20"
+                >
+            </div>
+            <div class="resultado"></div>
+                <input id="code" name="cifrada" type="text" placeholder="Resultado">
+            </div>
+            <div class="button">
+                <button id="encrypt" type="submit"> CODIFICAR </button>
+                <button id="decrypt" type="submit"> DESCODIFICAR </button>
+            </div> 
+    </main>
+        <h2>Conheça mais sobre a Cifra de César:</h2>        
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">Cifra de César – Wikipédia, a enciclopédia livre"</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=_Eeg1LxVWa8" target="_blank">Criptografia – Nerdologia Tech</a>
+                </li>
+             </ul>
+        </nav>    
 </body>
 </html>

@@ -21,3 +21,9 @@ ul{
   line-height:2;
   padding-left:0px;
 }
+
+a{
+  color:#46cfcf;
+  font-weight:700;
+  text-decoration:none;
+}

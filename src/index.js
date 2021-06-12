@@ -1,35 +1,21 @@
-import cipher from './cipher.js'
-window.addEventListener("load", function () {
+import cipher from './cipher.js';
 
-    cipher.encode();
-})
+function encrypt() {
+  let texto = document.getElementById("inputCaixaTexto").value;
+  let chave = Number(document.getElementById("chaveOffset").value);
+  document.getElementById("code").value = cipher.encode(chave, texto);
+  console.log(texto)
+}
 
-let caixaTexto = document.getElementById("inputCaixaTexto");
-caixaTexto.addEventListener("keypress", event => {
-let caixaTextoValor = caixaTexto.value
-console.log(caixaTextoValor);
-})
+function decrypt() {
+  let texto = document.getElementById("inputCaixaTexto").value;
+  let chave = Number(document.getElementById("chaveOffset").value);
+  document.getElementById("code").value = cipher.decode(chave, texto);
+  console.log(texto)
+}
 
-let offset = document.getElementById("chaveOffset");
-offset.addEventListener("click", event => {
-let offsetChave = offset.value
-console.log(offsetChave);
-})
+let btnEncrypt = document.getElementById("encrypt");
+btnEncrypt.addEventListener("click", encrypt);
 
-let caixaResultado = document.getElementById("code");
-caixaResultado.addEventListener("keypress" , event => {
-let caixaTexotoResultado = caixaResultado.value
-console.log(caixaTexotoResultado);
-})
-
-let buttonEncrypty = document.getElementById("encrypt");
-buttonEncrypty.addEventListener("click", event => {
-let codificarBotao = buttonEncrypty.value
-console.log(codificarBotao);
-})
-
-let buttonDecrypt = document.getElementById("decrypt");
-buttonDecrypt.addEventListener("click", event => {
-let descodificarBotao = buttonDecrypt.value
-console.log(descodificarBotao);
-})
+let btnDecrypt = document.getElementById("decrypt");
+btnDecrypt.addEventListener("click", decrypt);

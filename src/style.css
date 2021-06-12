@@ -27,3 +27,7 @@ a{
   font-weight:700;
   text-decoration:none;
 }
+
+input{
+  text-transform: uppercase;
+}

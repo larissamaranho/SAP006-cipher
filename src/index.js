@@ -4,14 +4,12 @@ function encrypt() {
   let texto = document.getElementById("inputCaixaTexto").value;
   let chave = Number(document.getElementById("chaveOffset").value);
   document.getElementById("code").value = cipher.encode(chave, texto);
-  console.log(texto)
 }
 
 function decrypt() {
   let texto = document.getElementById("inputCaixaTexto").value;
   let chave = Number(document.getElementById("chaveOffset").value);
   document.getElementById("code").value = cipher.decode(chave, texto);
-  console.log(texto)
 }
 
 let btnEncrypt = document.getElementById("encrypt");

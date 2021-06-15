@@ -14,13 +14,13 @@
     </header>
     <main>
         <h1>Tradutor de César</h1>
-            <form id="caixaDeTexto" autocomplete="off">
+            <div class="caixaDeTexto" autocomplete="off">
                 <input id="inputCaixaTexto" placeholder="Digite o texto" type="text" name="text"> 
-            </form>
-            <div class="chave"></div>
-                <input id="chaveOffset" type="number" min="0"> 
             </div>
-            <div class="resultado"></div>
+            <div class="chave">
+                <input id="chaveOffset" type="number" min="0" placeholder="Digite o descolamento"> 
+            </div>
+            <div class="resultado">
                 <input id="code" name="cifrada" type="text" placeholder="Resultado">
             </div>
             <div class="button">
@@ -32,12 +32,15 @@
         <nav>
             <ul>
                 <li>
-                    <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">Cifra de César – Wikipédia, a enciclopédia livre"</a>
+                    <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">Cifra de César – Wikipédia, a enciclopédia livre</a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/watch?v=_Eeg1LxVWa8" target="_blank">Criptografia – Nerdologia Tech</a>
                 </li>
              </ul>
-        </nav>    
+        </nav>   
+        <div class="footer">
+            <p>Feito por Larissa Maranho | Projeto Cipher | Laboratória </p>
+          </div> 
 </body>
 </html>
